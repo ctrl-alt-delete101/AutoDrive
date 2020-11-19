@@ -6,3 +6,4 @@ This routine uses one ultrasonic sensor and one gyroscope. In "theory" the robot
 
 # auto_routine_2
 still under construction I am currently thinking of using the mecanum wheels to straph and see how that goes(I might need more sensor for that).
+![](two.gif)
