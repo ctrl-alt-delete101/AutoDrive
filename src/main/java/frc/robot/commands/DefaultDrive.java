@@ -22,18 +22,20 @@ public class DefaultDrive extends CommandBase {
 
   @Override
   public void initialize() {
+    m_drive_train.getTalon(0).setNeutralMode(NeutralMode.Brake);
+    m_drive_train.getTalon(1).setNeutralMode(NeutralMode.Brake);
+    m_drive_train.getTalon(2).setNeutralMode(NeutralMode.Brake);
+    m_drive_train.getTalon(3).setNeutralMode(NeutralMode.Brake);
   }
 
   @Override
   public void execute() {
-      System.out.println(ControlMap.driver.getName());
-      m_drive_train.getInput(); // Fetches Joystick values
-      m_drive_train.doDead(); // Sets the DEADZONE value
-      m_drive_train.getDriveTrain().driveCartesian(DriveTrain.magnitude, DriveTrain.angle, DriveTrain.rotation);
-      System.out.println(DriveTrain.magnitude);
-      System.out.println(DriveTrain.angle);
-      System.out.println(DriveTrain.rotation);
-      System.out.println("------");
+      m_drive_train.driveMecanum(ControlMap.direction_y, ControlMap.direction_x, ControlMap.rotation);
+      // System.out.println(DriveTrain.magnitude);
+      // System.out.println(DriveTrain.angle);
+      // System.out.println(DriveTrain.rotation);
+      // System.out.println("------");
+      
   }
 
   @Override
