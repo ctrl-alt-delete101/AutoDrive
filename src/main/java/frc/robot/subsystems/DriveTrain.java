@@ -4,6 +4,7 @@
 
 package frc.robot.subsystems;
 
+import com.ctre.phoenix.motorcontrol.NeutralMode;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 //import com.revrobotics.CANSparkMax;
 //import com.revrobotics.CANSparkMaxLowLevel.MotorType;
@@ -36,6 +37,10 @@ public class DriveTrain extends SubsystemBase {
   //constructor
   public DriveTrain() {
     drivetrain = new MecanumDrive(talon_FL, talon_BL, talon_FR, talon_BR);
+    talon_FL.setNeutralMode(NeutralMode.Brake);
+    talon_FR.setNeutralMode(NeutralMode.Brake);
+    talon_BL.setNeutralMode(NeutralMode.Brake);
+    talon_BR.setNeutralMode(NeutralMode.Brake);
   }
 
   //drivetrain method

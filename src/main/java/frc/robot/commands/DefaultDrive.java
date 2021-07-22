@@ -21,10 +21,7 @@ public class DefaultDrive extends CommandBase {
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {
-    this.drive_train.talon_FL.setNeutralMode(NeutralMode.Brake);
-    this.drive_train.talon_FR.setNeutralMode(NeutralMode.Brake);
-    this.drive_train.talon_BL.setNeutralMode(NeutralMode.Brake);
-    this.drive_train.talon_BR.setNeutralMode(NeutralMode.Brake);
+    
   }
 
   // Called every time the scheduler runs while the command is scheduled.
