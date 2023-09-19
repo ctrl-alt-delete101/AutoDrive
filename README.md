@@ -1,6 +1,3 @@
-# Those who are stalking me lol
-This is pretty bad code. I remember writing all of this during COVID and didn't really have access to many sensor equipments or physical hardware. I would recommend tackling this problem with a LIDAR sensor because its so much better. Also V-SLAM is another technique that is popular in combo with the LIDAR. If you want to see some actual good autonomous routine code you should definitely check out 612 repo.
-
 # AutoDrive
 This code will "theoretically" solve any maze using sensors and different algorithms.
 
